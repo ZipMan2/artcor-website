@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Features() {
   return (
     <section className="w-full">
-      <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2">
+      <div className="w-full max-w-[1700px] mx-auto grid grid-cols-1 md:grid-cols-2">
         {/* RIGHT */}
         <div className="flex flex-col justify-center px-6 py-10 md:order-2 md:justify-start md:py-24 md:pl-13 md:px-22">
           <h2 className="mb-5 text-2xl sm:text-3xl md:text-3xl">
