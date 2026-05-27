@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pl" className={poppins.variable} suppressHydrationWarning>
       <body suppressHydrationWarning className="bg-brand-light text-brand-black font-poppins">
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>

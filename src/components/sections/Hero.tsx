@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative mx-auto px-6 w-full max-w-7xl">
         <div className="max-w-xl sm:max-w-2xl">
-          <h1 className="mb-4 text-3xl font-semibold sm:mb-6 sm:text-5xl">
+          <h1 className="mb-4 text-3xl sm:mb-6 sm:text-5xl">
             Nowoczesne meble w Twoim wnętrzu
           </h1>
 
