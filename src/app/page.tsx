@@ -1,41 +1,31 @@
-// import Image from "next/image";
+import Hero from '@/components/sections/Hero'
 
 export default function Home() {
   return (
-    <>
-      <main></main>
+    <main>
+      {/* Hero Section */}
+      <Hero />
 
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br><p>s</p><br></br>
-      v
-      v
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      v
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br><p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      <p>s</p><br></br>
-      v
-      v
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
+p <br />
 
 
-    </>
-  );
+
+    </main>
+  )
 }
