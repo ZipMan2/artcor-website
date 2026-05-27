@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "../styles/globals.css";
+import Navbar from "@/components/layout/Navbar";
 
 const poppins = localFont({
   src: [
@@ -20,7 +21,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pl" className={poppins.variable} suppressHydrationWarning>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning className="bg-brand-light text-brand-black font-poppins">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

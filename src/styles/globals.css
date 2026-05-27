@@ -1,5 +1,22 @@
 @import 'tailwindcss';
 
 @theme {
+  --color-brand-black: #000000;
+  --color-brand-light: #f7f7f9;
+  --color-brand-beige: #d3b4a1;
+  --color-brand-slate: #b6c1c2;
+  --color-brand-amber: #BB4D10;
+
   --font-poppins: var(--font-poppins);
 }
+
+/* // Tło
+<div className="bg-brand-light">
+// Tekst
+<h1 className="text-brand-black">
+// Przycisk
+<button className="bg-brand-beige text-brand-black">
+  Skontaktuj się
+</button>
+// Border
+<div className="border border-brand-slate"> */
