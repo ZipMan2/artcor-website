@@ -5,8 +5,8 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-brand-light w-full border-t border-stone-200">
-      <div className="mx-auto grid max-w-[1600px] grid-cols-1 gap-10 px-6 py-10 md:grid-cols-3 md:px-12">
+    <footer className="w-full bg-brand-light border-t border-stone-200">
+      <div className="grid max-w-[1600px] grid-cols-1 gap-10 px-6 py-10 mx-auto md:grid-cols-3 md:px-12">
         {/* LEFT */}
         <div className="flex flex-col items-start">
           <Link href="/">
