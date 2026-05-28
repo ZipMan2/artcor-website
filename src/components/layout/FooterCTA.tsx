@@ -20,7 +20,7 @@ export default function FooterCTA() {
         </div>
 
         {/* RIGHT */}
-        <div className="relative min-h-[220px] overflow-hidden sm:min-h-[320px] md:min-h-[420px]">
+        <div className="relative min-h-[220px] overflow-hidden sm:min-h-[320px] md:min-h-[360px]">
           <Image
             src="/footer-eu-funds.png"
             alt="Europejski Fundusze dla firmy Artcor"
