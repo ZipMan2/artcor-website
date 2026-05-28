@@ -20,39 +20,6 @@ export default function Home() {
       <Gallery />
       {/* Professionalism Section */}
       <Professionalism />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
-      p <br />
     </main>
   )
 }

@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import React from 'react'
 import Button from '../ui/Button'
 import CoverImage from '../ui/CoverImage'
 
@@ -9,7 +7,7 @@ export default function Professionalism() {
       <div className="mx-auto grid w-full max-w-[1700px] grid-cols-1 md:grid-cols-2">
         {/* RIGHT */}
         <div className="flex flex-col justify-center px-6 py-10 md:order-2 md:justify-start md:px-24 md:py-37 md:pl-13">
-          <h3 className="-mb-2 text-2xl sm:text-3xl md:text-3xl">
+          <h3 className="mb-4 text-2xl sm:text-3xl md:text-3xl md:-mb-2">
             Profesjonalizm
           </h3>
 
