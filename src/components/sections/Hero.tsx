@@ -11,6 +11,7 @@ export default function Hero() {
           alt="Meble"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-[20%_center] sm:object-center"
         />
         {/* <div className="absolute inset-0 bg-black/10" /> */}

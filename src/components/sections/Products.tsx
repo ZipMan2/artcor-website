@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Products() {
   return (
@@ -10,26 +11,26 @@ export default function Products() {
             Produkujemy meble:
           </h2>
 
-          <ul className="mb-10 space-y-0 text-sm text-stone-700 sm:text-base">
-            <li>• wolnostojące</li>
-            <li>• systemy ścienne</li>
-            <li>• meble wyposażenia przestrzeni sklepowej</li>
-            <li>• stoisk targowych</li>
-            <li>• hoteli</li>
-            <li>• restauracji</li>
-            <li>• punktów usługowych</li>
+          <ul className="mb-10 list-disc list-inside space-y-0 text-sm text-stone-700 sm:text-base">
+            <li>wolnostojące</li>
+            <li>systemy ścienne</li>
+            <li>meble wyposażenia przestrzeni sklepowej</li>
+            <li>stoisk targowych</li>
+            <li>hoteli</li>
+            <li>restauracji</li>
+            <li>punktów usługowych</li>
           </ul>
 
           <h4 className="mb-12 text-base font-medium sm:text-lg">
             Potrzebujesz czegoś wyjątkowego?
           </h4>
 
-          <a
+          <Link
             href="/kontakt"
-            className="bg-brand-beige w-fit px-6 py-3 text-sm font-medium tracking-widest text-white uppercase transition hover:opacity-90"
+            className="bg-brand-beige text-brand-black w-fit px-6 py-3 text-sm font-medium tracking-widest uppercase transition hover:opacity-90"
           >
             Skontaktuj się
-          </a>
+          </Link>
         </div>
 
         {/* RIGHT */}
@@ -39,6 +40,8 @@ export default function Products() {
             alt="Produkcja mebli"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            loading="lazy"
           />
         </div>
       </div>

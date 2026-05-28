@@ -1,14 +1,15 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Features() {
   return (
     <section className="w-full">
-      <div className="w-full max-w-[1700px] mx-auto grid grid-cols-1 md:grid-cols-2">
+      <div className="mx-auto grid w-full max-w-[1700px] grid-cols-1 md:grid-cols-2">
         {/* RIGHT */}
-        <div className="flex flex-col justify-center px-6 py-10 md:order-2 md:justify-start md:py-24 md:pl-13 md:px-22">
-          <h2 className="mb-5 text-2xl sm:text-3xl md:text-3xl">
+        <div className="flex flex-col justify-center px-6 py-10 md:order-2 md:justify-start md:px-22 md:py-24 md:pl-13">
+          <h3 className="mb-5 text-2xl sm:text-3xl md:text-3xl">
             Co nas wyróżnia?
-          </h2>
+          </h3>
 
           <p className="mb-2 text-sm leading-relaxed text-stone-700 sm:text-base md:mt-6">
             Oferujemy nasze długoletnie doświadczenie,
@@ -29,12 +30,12 @@ export default function Features() {
             Szukasz sprawdzonego wykonawcy?
           </span>
 
-          <a
+          <Link
             href="/kontakt"
-            className="bg-brand-beige text-white w-fit px-6 py-3 text-sm font-medium tracking-widest uppercase transition hover:opacity-90"
+            className="bg-brand-beige text-brand-black w-fit px-6 py-3 text-sm font-medium tracking-widest uppercase transition hover:opacity-90"
           >
             Skontaktuj się
-          </a>
+          </Link>
         </div>
 
         {/* LEFT */}
@@ -44,6 +45,8 @@ export default function Features() {
             alt="Meble"
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            loading="lazy"
           />
         </div>
       </div>
