@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Button from '../ui/Button'
+import CoverImage from '../ui/CoverImage'
 
 export default function Products() {
   return (
@@ -11,7 +12,7 @@ export default function Products() {
             Produkujemy meble:
           </h2>
 
-          <ul className="mb-10 list-disc list-inside space-y-0 text-sm text-stone-700 sm:text-base">
+          <ul className="mb-10 list-inside list-disc space-y-0 text-sm text-stone-700 sm:text-base">
             <li>wolnostojące</li>
             <li>systemy ścienne</li>
             <li>meble wyposażenia przestrzeni sklepowej</li>
@@ -25,25 +26,11 @@ export default function Products() {
             Potrzebujesz czegoś wyjątkowego?
           </h4>
 
-          <Link
-            href="/kontakt"
-            className="bg-brand-beige text-brand-black w-fit px-6 py-3 text-sm font-medium tracking-widest uppercase transition hover:opacity-90"
-          >
-            Skontaktuj się
-          </Link>
+          <Button text="Skontaktuj się" href="/kontakt" />
         </div>
 
         {/* RIGHT */}
-        <div className="relative min-h-[320px] md:min-h-[780px]">
-          <Image
-            src="/products-bg.jpg"
-            alt="Produkcja mebli"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            loading="lazy"
-          />
-        </div>
+        <CoverImage src="/products-bg.jpg" alt="Wielki Bar" />
       </div>
     </section>
   )
