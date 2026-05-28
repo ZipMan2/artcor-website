@@ -41,7 +41,7 @@ export default function Navbar() {
       {/* Navbar */}
       <div
         ref={navRef}
-        className={`bg-brand-light sticky top-0 right-0 left-0 z-50 h-14 transition-all duration-300 ${scrolled ? 'md:h-14 md:shadow-md' : 'md:h-18'} }`}
+        className={`bg-brand-light sticky top-0 right-0 left-0 z-50 h-14 transition-all duration-300 ${scrolled ? ' bg-white md:h-14 md:shadow-md' : 'md:h-18'} }`}
       >
         <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6">
           {/* Logo */}

@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import "../styles/globals.css";
 import Navbar from "@/components/layout/Navbar";
 import FooterCTA from "@/components/layout/FooterCTA";
+import Footer from "@/components/layout/Footer";
 
 const poppins = localFont({
   src: [
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Navbar />
         {children}
         <FooterCTA />
+        <Footer />
       </body>
     </html>
   );
