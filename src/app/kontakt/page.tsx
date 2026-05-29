@@ -1,38 +1,13 @@
 import Image from 'next/image'
+import type { Metadata } from 'next'
 import Input from '@/components/ui/Input'
+import { contacts } from '@/constants/contacts'
 
-const contacts = [
-  {
-    title: 'Biuro / kontakt ogólny',
-    name: 'Wioletta Stach',
-    email: 'biuro@artcor.pl',
-    phone: '14 658 50 05',
-  },
-  {
-    title: 'Dział Marketingu',
-    name: 'Paulina Szczepaniak',
-    email: 'paulina.szczepaniak@artcor.pl',
-    phone: '797 878 624',
-  },
-  {
-    title: 'Dział technologiczno-produkcyjny',
-    name: 'Tomasz Jankosz',
-    email: 'produkcja@artcor.pl',
-    phone: '786 186 366',
-  },
-  {
-    title: 'Kierownik produkcji',
-    name: 'Andżelika Nowotny-Jarosz',
-    email: 'orders@artstore.pl',
-    phone: '508 703 449',
-  },
-  {
-    title: 'Logistyka i Zaopatrzenie',
-    name: 'Sylwester Mularz',
-    email: 'sylwek@artstore.pl',
-    phone: '787 780 890',
-  },
-]
+export const metadata: Metadata = {
+  title: `Kontakt — Artcor`,
+  description:
+    'Skontaktuj się z naszym działem sprzedaży lub wyślij zapytanie przez formularz.',
+}
 
 export default function ContactPage() {
   return (
@@ -70,6 +45,7 @@ export default function ContactPage() {
               <textarea
                 rows={5}
                 placeholder="Wiadomość"
+                id="message"
                 className={`placeholder:text-neutral-500' focus:border-blackresize-none w-full border border-neutral-700 px-4 py-3 text-sm transition outline-none`}
               />
 
@@ -100,7 +76,7 @@ export default function ContactPage() {
                 key={index}
                 className="border border-neutral-200 p-4 transition hover:border-black md:p-6"
               >
-                <h3 className="mb-1 text-md font-medium">
+                <h3 className="text-md mb-1 font-medium">
                   {contact.title}
                 </h3>
                 <p className="mb-6 text-sm text-neutral-500">

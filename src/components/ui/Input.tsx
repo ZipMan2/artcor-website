@@ -12,6 +12,8 @@ export default function Input({
   return (
     <input
       type={type}
+      id={type}
+      autoComplete="on"
       placeholder={placeholder}
       className={`placeholder:text-neutral-500' w-full border border-neutral-700 px-4 py-3 text-sm transition outline-none focus:border-black ${className}`}
     />
