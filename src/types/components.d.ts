@@ -13,3 +13,11 @@ export interface CoverImageProps {
   src: string
   alt: string
 }
+
+export type LightboxProps = {
+  images: string[]
+  currentIndex: number
+  onClose: () => void
+  onPrev: () => void
+  onNext: () => void
+}
